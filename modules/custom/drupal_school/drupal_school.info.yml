@@ -1,0 +1,6 @@
+name: Drupal School
+type: module
+description: 'Demo for Drupal 8 school'
+package: School
+core: 8.x
+hidden: false

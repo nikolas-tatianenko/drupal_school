@@ -1,0 +1,4 @@
+'drupal school permission':
+  title: Drupal 8 School permission
+  description: Allow user to edit any any Drupal 8 block or page.
+  'restrict access': TRUE

@@ -1,0 +1,5 @@
+drupal_school.lesson3:
+  version: 1.x
+  css:
+    component:
+      css/lesson3/currency_element.css: {}

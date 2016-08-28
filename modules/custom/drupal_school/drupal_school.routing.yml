@@ -1,0 +1,8 @@
+# Drupal 8 School: lesson 3
+drupal_school.lesson3.currencies:
+  path: 'school/lesson3'
+  defaults:
+    _controller: '\Drupal\drupal_school\Controller\Lesson3Controller::currencies'
+    _title: 'Bank currency page'
+  requirements:
+    _permission: 'drupal school permission'
