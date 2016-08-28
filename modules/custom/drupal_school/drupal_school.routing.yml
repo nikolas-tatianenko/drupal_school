@@ -6,3 +6,51 @@ drupal_school.lesson3.currencies:
     _title: 'Bank currency page'
   requirements:
     _permission: 'drupal school permission'
+
+# Access to this path is not restricted. This is notated as _access: 'TRUE'.
+drupal_school.lesson4.description:
+  path: 'school/lesson4'
+  defaults:
+    _controller: '\Drupal\drupal_school\Controller\Lesson4Controller::description'
+    _title: 'Page Example'
+  requirements:
+    _permission: 'drupal school permission'
+
+drupal_school.lesson4.simple:
+  path: 'school/lesson4/simple'
+  defaults:
+    _controller: '\Drupal\drupal_school\Controller\Lesson4Controller::simple'
+    _title: 'Simple - no arguments'
+  requirements:
+    _permission: 'drupal school permission'
+
+drupal_school.lesson4.arguments:
+  path: 'school/lesson4/arguments/{first}/{second}'
+  defaults:
+    _controller: '\Drupal\drupal_school\Controller\Lesson4Controller::arguments'
+  requirements:
+    _permission: 'drupal school permission'
+
+# Reponse example
+drupal_school.lesson4.response:
+  path: '/school/lesson4/response'
+  defaults:
+    _controller: '\Drupal\drupal_school\Controller\Lesson4Controller::checkResponse'
+  requirements:
+   _permission: 'drupal school permission'
+
+# Will return Json response.
+drupal_school.lesson4.response_json:
+  path: '/school/lesson4/response/json'
+  defaults:
+    _controller: '\Drupal\drupal_school\Controller\Lesson4Controller::responseJson'
+  requirements:
+   _permission: 'drupal school permission'
+
+# Will redirect to different page.
+drupal_school.lesson4.response_redirect:
+  path: '/school/lesson4/response/redirect'
+  defaults:
+    _controller: '\Drupal\drupal_school\Controller\Lesson4Controller::responseRedirect'
+  requirements:
+   _permission: 'drupal school permission'

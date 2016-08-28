@@ -3,3 +3,13 @@ drupal_school.lesson3:
   css:
     component:
       css/lesson3/currency_element.css: {}
+
+drupal_school.lesson4:
+  version: 1.x
+  js:
+    js/main.js: {}
+  # Add jQuery and settings dependencies.
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

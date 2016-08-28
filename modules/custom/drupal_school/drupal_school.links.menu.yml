@@ -1,3 +1,30 @@
 drupal_school.lesson3.currencies:
   title: Lesson 3: Currencies
   route_name: drupal_school.lesson3.currencies
+
+drupal_school.lesson4.description:
+  title: Lesson 4: Description
+  route_name: drupal_school.lesson4.description
+
+drupal_school.lesson4.simple:
+  title: Lesson 4: Description
+  route_name: drupal_school.lesson4.simple
+
+drupal_school.lesson4.arguments:
+  title: Lesson 4: Arguments
+  route_name: drupal_school.lesson4.arguments
+
+# Reponse example
+drupal_school.lesson4.response:
+  title: Lesson 4: Response
+  route_name: drupal_school.lesson4.response
+
+# Will return Json response.
+drupal_school.lesson4.response_json:
+  title: Lesson 4: Response Json
+  route_name: drupal_school.lesson4.response_json
+
+# Will redirect to different page.
+drupal_school.lesson4.response_redirect:
+  title: Lesson 4: Response Redirect
+   route_name: drupal_school.lesson4.response_redirect
