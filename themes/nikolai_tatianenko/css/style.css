@@ -1,0 +1,15 @@
+#content article.node-odd{
+  background: #eee8d5;
+}
+
+#content article.node-odd .node__title {
+  color: red;
+}
+
+#content article.node-even{
+  background: white;
+}
+
+#content article.node-even .node__title {
+  color: black;
+}

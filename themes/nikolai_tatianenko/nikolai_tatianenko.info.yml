@@ -1,0 +1,9 @@
+name: Nikolai_Tatianenko
+type: theme
+base theme: bartik
+description: 'Drupal 8 School : Lesson 5 theme'
+package: Core
+version: 8.0
+core: 8.x
+libraries:
+  - nikolai_tatianenko/global

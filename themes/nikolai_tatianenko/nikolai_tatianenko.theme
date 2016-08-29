@@ -1,0 +1,30 @@
+<?php
+/**
+ *
+ */
+
+/**
+ * Implement hook_preprocess_node().
+ */
+function nikolai_tatianenko_preprocess_node(&$variables) {
+  $classParts[] = 'node';
+  $classParts[] = $variables['node']->get('nid')->value % 2 == 0 ? 'odd' : 'even';
+
+  // Set class to node wraper.
+  $variables['attributes']['class'][] = implode('-', $classParts);
+
+  // Set class for node title.
+  $classParts[] = 'title';
+  $variables['title_attributes']['class'][] = implode('-', $classParts);
+}
+
+/**
+ * Implement hook_theme_suggestions_node_alter().
+ */
+function nikolai_tatianenko_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  // Prepare theme suggestions.
+  $suggestion_parts[] = 'node';
+  $suggestion_parts[] = $variables['elements']['#node']->get('nid')->value % 2 == 0 ? 'odd' : 'even';
+  // Add to suggestions list.
+  $suggestions[] = implode('__', $suggestion_parts);
+}
