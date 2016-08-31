@@ -1,0 +1,6 @@
+name: Nikolai Tatianenko Lesson 8: Caching, Logging and Migration
+type: module
+description: 'Drupal 8 School: Lesson 8'
+package: Drupal 8 School
+core: 8.x
+hidden: false

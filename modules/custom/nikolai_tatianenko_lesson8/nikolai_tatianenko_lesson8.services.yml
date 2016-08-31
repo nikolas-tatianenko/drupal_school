@@ -1,0 +1,11 @@
+services:
+  nikolai_tatianenko_lesson8.logger:
+    class: Drupal\nikolai_tatianenko_lesson8\Services\Lesson8Service
+    arguments: ['@logger.factory']
+
+  cache.lesson8:
+    class: Drupal\Core\Cache\CacheBackendInterface
+    tags:
+      - { name: cache.bin}
+    factory: cache_factory:get
+    arguments: [drupal_school]

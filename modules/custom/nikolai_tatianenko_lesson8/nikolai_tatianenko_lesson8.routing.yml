@@ -1,0 +1,8 @@
+
+nikolai_tatianenko_lesson8.form:
+  path: 'school/lesson8/form'
+  defaults:
+    _form: '\Drupal\nikolai_tatianenko_lesson8\Form\NickForm'
+    _title: 'Nick Form Logging'
+  requirements:
+    _permission: 'view content'
