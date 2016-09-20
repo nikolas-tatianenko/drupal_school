@@ -3,7 +3,7 @@ services:
     class: Drupal\nikolai_tatianenko_lesson8\Services\Lesson8Service
     arguments: ['@logger.factory']
 
-  cache.lesson8:
+  cache.nikolai_tatianenko_lesson8:
     class: Drupal\Core\Cache\CacheBackendInterface
     tags:
       - { name: cache.bin}

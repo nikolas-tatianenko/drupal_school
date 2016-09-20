@@ -21,10 +21,11 @@ class Lesson8Service {
    * {@inheritdoc}
    */
   public function logToOtherChannels($message) {
-    // Send notice.
-    $this->loggerFactory->get('nikolai-tatianenko_lesson8')->notice($message);
+    // Send emergency.
+    $this->loggerFactory->get('nikolai-tatianenko_lesson8')
+      ->emergency($message);
 
-    // Send Error.
-    $this->loggerFactory->get('nikolai-tatianenko_lesson8')->error($message);
+    // Send warning.
+    $this->loggerFactory->get('nikolai-tatianenko_lesson8')->warning($message);
   }
 }
